@@ -1,4 +1,4 @@
-# smartFiles - File Organizer by Command line
+# florg - File Organizer by Command line
 
 A powerful CLI tool for batch file renaming and organizing with an intuitive interface, preview mode, and undo capability.
 
@@ -38,10 +38,10 @@ A powerful CLI tool for batch file renaming and organizing with an intuitive int
 
 ### From PyPI (Recommended)
 
-Install smartFiles directly from PyPI using pip:
+Install florg directly from PyPI using pip:
 
 ```bash
-pip install smartFiles
+pip install florg
 ```
 
 That's it! The `organize` command will be available immediately.
@@ -52,8 +52,8 @@ For development or the latest changes:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/laisario/smartFiles.git
-cd smartFiles
+git clone https://github.com/laisario/florg.git
+cd florg
 ```
 
 2. Install in development mode:
@@ -63,7 +63,7 @@ pip install -e .
 
 ### Dependencies
 
-smartFiles automatically installs these dependencies:
+florg automatically installs these dependencies:
 - `click` - CLI framework
 - `rich` - Beautiful terminal output
 - `questionary` - Interactive prompts
@@ -327,7 +327,7 @@ This will:
 4. Move all files back to original locations
 5. Remove empty folders (for group operations)
 
-**History Location:** `~/.smartfiles_history.json`
+**History Location:** `~/.florg_history.json`
 
 ## Error Handling
 
@@ -357,7 +357,7 @@ pytest --cov=organize --cov-report=html
 ## Project Structure
 
 ```
-smartFiles/
+florg/
 ├── organize/
 │   ├── __init__.py
 │   ├── cli.py          # Main CLI entry point
@@ -383,8 +383,8 @@ smartFiles/
 
 ```bash
 # Clone the repository
-git clone https://github.com/laisario/smartFiles.git
-cd smartFiles
+git clone https://github.com/laisario/florg.git
+cd florg
 
 # Create virtual environment
 python -m venv venv
@@ -460,20 +460,20 @@ chmod u+w /path/to/directory
 Check if the history file exists:
 
 ```bash
-cat ~/.smartfiles_history.json
+cat ~/.florg_history.json
 ```
 
 If corrupted, you can reset it:
 
 ```bash
-rm ~/.smartfiles_history.json
+rm ~/.florg_history.json
 ```
 
 ## Support
 
 If you encounter any issues or have questions:
 
-1. Check the [Issues](https://github.com/laisario/smartFiles/issues) page
+1. Check the [Issues](https://github.com/laisario/florg/issues) page
 2. Create a new issue with detailed information
 3. Include error messages and steps to reproduce
 
