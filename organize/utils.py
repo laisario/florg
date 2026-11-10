@@ -20,7 +20,7 @@ def sanitize_filename(name: str) -> str:
     invalid_chars = r'[<>:"/\\|?*\x00-\x1f]'
     sanitized = re.sub(invalid_chars, '_', name)
     
-    sanitized = sanitized.strip('. ')
+    sanitized = sanitized.rstrip('. ')
     
     if not sanitized:
         sanitized = 'unnamed'
